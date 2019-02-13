@@ -52,10 +52,14 @@ mySwitch.prototype = {
         method: 'GET',
     }, 
     function (error, response, body) {
-      if (error) {
+      if (error) 
+      {
+       if (statusCode) 
+       {
         me.log('STATUS: ' + response.statusCode);
-        me.log(error.message);
-        return next(error);
+       }
+       me.log(error.message);
+       return next(error);
       }
       return next(null, body.currentState);
     });
@@ -65,15 +69,19 @@ mySwitch.prototype = {
     const me = this;
     request({
       url: me.postUrl,
-      body: {'targetState': on},
+      body: JSON.stringify({ ‘targetState’: on }),
       method: 'POST',
       headers: {'Content-type': 'application/json'}
     },
     function (error, response) {
-      if (error) {
+      if (error) 
+      {
+       if (statusCode)
+       {
         me.log('STATUS: ' + response.statusCode);
-        me.log(error.message);
-        return next(error);
+       }
+       me.log(error.message);
+       return next(error);
       }
       return next();
     });
