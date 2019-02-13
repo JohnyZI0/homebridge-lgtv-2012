@@ -3,6 +3,12 @@
   "version": "0.1",
   "description": "Homebridge plugin for LG TV 2012",
   "main": "index.js",
+  "keywords": [
+    "homebridge-plugin",
+    "lgtv",
+    "homebridge",
+    "homekit"
+  ],
   "engines": 
   {
     "homebridge": ">=0.2.5
