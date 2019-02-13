@@ -34,7 +34,15 @@ function mySwitch(log, config) {
   this.getUrl = url.parse(config['getUrl']);
   this.postUrl = url.parse(config['postUrl']);
 }
- 
+
+/*
+{
+  "accessory": "MyAwesomeSwitch",
+  "getUrl": "http://192.168.0.10/api/status",
+  "postUrl": "http://192.168.0.10/api/order"
+}
+*/
+
 mySwitch.prototype = {
  
   getSwitchOnCharacteristic: function (next) {
