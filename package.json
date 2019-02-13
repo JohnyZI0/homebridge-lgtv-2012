@@ -1,6 +1,6 @@
 {
   "name": "homebridge-my-switch-plugin",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "Homebridge plugin for LG TV 2012",
   "main": "index.js",
   "keywords": [
