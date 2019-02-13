@@ -1,1 +1,12 @@
-
+{
+  "name": "homebridge-my-switch-plugin",
+  "version": "0.1",
+  "description": "Homebridge plugin for LG TV 2012",
+  "main": "index.js",
+  "engines": 
+  {
+    "homebridge": ">=0.2.5
+  },
+  "author": "JohnyZI0",
+  "license": "MIT",
+}
